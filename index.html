@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Maker</title>
+    <link href="styles_index.css" rel="stylesheet">
+    
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html">Form</a>
+        <p>SnapFolio</p>
+        <a href="example.html">Example</a>
+    </nav>
+
+    <div class="form">
+
+        <div class="mid">
+
+        <form class="main-form" id="main-form" method="post">
+            <fieldset>
+                <legend>Basic Details </legend>
+                <div class="row1">
+                <ul>
+                <li>
+                <label for="first_name">Name*</label>
+                <input type="text" id="first_name" name="first_name" pattern="^[^0-9]+$" placeholder="Kshitij" required>
+                </li>
+                <li>
+                <label for="last_name">Surname</label>
+                <input type="text" id="last_name" name="last_name" pattern="^[^0-9]+$" placeholder="Sinha" >
+                </li>
+                <li>
+                    <label for="image_input">Upload Your Portrait</label>
+                    <input type="file" id="myFile" name="filename"> 
+                </li>
+
+                
+            </ul>
+
+                </div>
+            </fieldset>
+            
+
+
+            <fieldset>
+                <legend>Educational Info</legend>
+
+                <div class="row2">
+                    <ul>
+                <li><label for="edu1">Bachelor's Institute*</label>
+                <input type="text" id="edu1_input" class="edu1_input" pattern="^[^0-9]+$" placeholder="DTU" required name="edu1_input"></li>
+
+                <li><label for="degree1">Degree*</label>
+                <input type="text" id="degree1_input" class="degree1_input" pattern="^[^0-9]+$" placeholder="B Tech" required name="degree1_input"></li>
+                </ul>
+            </div>
+
+            <div class="row3">
+                <ul>
+                <li><label for="grade1">CGPA at Bachelor's Institute*</label>
+                <input type="" id="grade1_input" class="grade1_input" min="0.00" max="10.00" placeholder="9.16" required name="grade1_input"></li>
+
+                <li><label for="dept1">Department*</label>
+                <input type="text" id="dept1_input" class="dept1_input" placeholder="Computer Science" required name="dept1_input"></li>
+
+                <li><label for="year1">Year of Completion*</label>
+                <input type="number" required placeholder="2027" id="year1" class="year1" name="year1"></li>
+                </ul>
+            </div>
+
+
+            <div class="row4">
+                <ul>
+                <li><label for="edu2">Senior Secondary School (XII<sup>th</sup>)*</label>
+                <input type="text" id="edu2_input" class="edu2_input" pattern="^[^0-9]+$" placeholder="NCS" required name="edu2_input"></li>
+
+                <li><label for="stream2">Stream*</label>
+                <select name="stream2" id="stream2" required>
+                <option value="science">Science</option>
+                <option value="commerce">Commerce</option>
+                <option value="humanities">Humanities</option>
+                </select></li>
+                </ul>
+            </div>
+
+            <div class="row5">
+                <ul>
+                <li><label for="grade2">Percentage*</label>
+                <input type="number" id="grade2_input" class="grade2_input" min="0.0" max="100.0" placeholder="95.0" required name="grade2_input"></li>
+
+                <li><label for="board2">Board*</label>
+                <select name="board2" id="board2" required>
+                <option value="cbse">CBSE</option>
+                <option value="icse">ICSE</option>
+                <option value="state">State</option>
+                <option value="other">Other</option>
+                </select>
+                </li>
+
+                <li><label for="year2">Year of Completion*</label>
+                <input type="number" required placeholder="2023" id="year2" class="year2" name="year2"></li></ul>
+
+
+            </div>
+
+
+
+            <div class="row6">
+                <ul><li>
+                <label for="edu3">Secondary School (X<sup>th</sup>)*</label>
+                <input type="text" id="edu3_input" class="edu3_input" pattern="^[^0-9]+$" placeholder="DPS" required name="edu3_input"></li></ul>
+
+                <!-- <label for="degree3">Stream*</label>
+                <select name="stream" id="degree2" required>
+                <option value="science">Science</option>
+                <option value="commerce">Commerce</option>
+                <option value="humanities">Humanities</option>
+                </select> -->
+            </div>
+
+            <div class="row7">
+                <ul><li>
+                <label for="grade3">Percentage*</label>
+                <input type="number" id="grade3_input" class="grade3_input" min="0.0" max="100.0" placeholder="94.6" required name="grade3_input"></li>
+
+                <li><label for="board3">Board*</label>
+                <select name="board3" id="board3" required>
+                <option value="cbse">CBSE</option>
+                <option value="icse">ICSE</option>
+                <option value="state">State</option>
+                <option value="other">Other</option>
+                </select></li>
+
+                <li><label for="year3">Year of Completion*</label>
+                <input type="number" required placeholder="2021" id="year3" class="year3" name="year3"></li></ul>
+            </div>
+
+            </fieldset>
+
+            
+
+            <fieldset>
+                <legend>Projects</legend>
+                <div class="row8">
+                
+                <ul><li><label for="proj1">Project 1 Title</label>
+                <input type="text" name="proj1_title" id="proj1_title" class="proj1_title"></li>
+
+                <li><label for="proj1_link">Project 1 Link</label>
+
+                <input type="url" name="proj1_link" id="proj1_link" class="proj1_link"></li>
+                </ul>
+
+                </div>
+
+                <div class="row9">
+                <ul><li>
+                <label for="proj1_desc">Describe Project 1</label>
+                <textarea id="proj1_desc" class="proj1_desc" name="proj1_desc" rows="5" cols="60" ></textarea></li></ul>
+
+                <div class="row10">
+                
+                <ul><li><label for="proj2">Project 2 Title</label>
+                <input type="text" name="proj2" id="proj2" class="proj2" ></li>
+
+                <li><label for="proj2_link">Project 2 Link</label>
+
+                <input type="url" name="proj2_link" id="proj2_link" class="proj2_link" ></li></ul>
+
+
+                </div>
+
+                <div class="row11">
+                <ul><li>
+                <label for="proj2_desc">Describe Project 2</label>
+                <textarea id="proj2_desc" class="proj2_desc" name="proj2_desc" rows="5" cols="60"></textarea></li></ul>
+                </div>
+
+                
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="contact_info">
+                <ul>
+
+                <li><label for="email">Email*</label>
+                <input type="email" required name="email" id="email" class="email" placeholder="address@email.com"></li>
+
+                <li><label for="phone">Phone*</label>
+                <input type="number" required name="phone" id="phone" class="phone" min="1000000000" max="9999999999" placeholder="9876543210"></li>
+
+                <li><label for="personal_website">Personal Website</label>
+                <input type="url"  name="personal_website" id="personal_website" class="personal_website"  placeholder="github.com/Erbium84"></li></ul>
+            
+            </div>
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Select Theme</legend>
+                <div class="themes">
+                <input type="radio" name="themes"class="light" id="light"><label for="light"><div class="lightt">Light</div></label>
+                <input type="radio" class="dark" name="themes" id="dark"><label for="dark"><div class="darkk">Dark</div></label>
+                </div>
+            </fieldset>
+
+
+            
+
+
+
+            <div class="final"><button type="submit" class="create_portfolio">Create Portfolio!</button></div>
+        </form>
+
+        </div>
+
+
+    </div>
+</body>
+</html>

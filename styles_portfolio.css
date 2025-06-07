@@ -1,0 +1,131 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f3ee;
+    color: #14213d;
+}
+
+nav {
+    position: fixed;
+    background-color: maroon;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 600;
+    color:gold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.main_p {
+    padding: 12vh 8vw 5vh 8vw;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin-bottom: 10vh;
+}
+
+.row1_p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.pfp {
+    height: 10vh;
+    width: auto;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.name_p {
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.row2_p,
+.proj_legend,
+legend {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1vh;
+}
+
+fieldset {
+    padding: 1.5vh 2vh;
+    margin: 2.5vh 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+}
+
+[class^='row'],
+.projset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+}
+
+[class^='row'] *,
+.projects * {
+    margin: 0.3vh 0.5vh;
+}
+
+.projects {
+    padding: 2vh 0;
+}
+
+.proj1_p,
+.proj2_p {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1vh;
+    background-color: #f9f9f9;
+    width: 48%;
+}
+
+.proj1_name,
+.proj2_name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5vh;
+}
+
+.contact_info_p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.95rem;
+}
+
+.proj1_p:hover,
+.proj2_p:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-color: #999;
+}
+
+.contact_info_p div:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: #f0f0f0;
+    padding: 0.5vh 1vw;
+    border-radius: 6px;
+    cursor: pointer;
+}
