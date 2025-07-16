@@ -99,8 +99,8 @@
     <fieldset>
         <legend>Contact Details</legend>
         <div class="contact_info_p">
-        <div class="email_p">kshitijs2405@gmail.com</div>
-        <div class="phone_p">9319937701</div>
+        <div class="email_p">kshitijXXXX2405@gmail.com</div>
+        <div class="phone_p">931993XXXX</div>
         <div class="website_p"></div>
         </div>
 
@@ -108,6 +108,61 @@
 
     
     </div>
+
+     <div id="controls">
+        <button onclick="exportCodeAsPDF()">Download Portfolio Code as PDF</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+    async function exportCodeAsPDF() {
+  const { jsPDF } = window.jspdf;
+
+  const htmlCode = document.documentElement.outerHTML;
+  const cssURL = 'styles_portfolio.css';
+  const cssResponse = await fetch(cssURL);
+  const cssCode = await cssResponse.text();
+
+  // === HTML PDF ===
+  const htmlDoc = new jsPDF();
+  htmlDoc.setFontSize(8); // Reduce font size
+  const htmlLines = htmlCode.split('\n');
+  let y1 = 10;
+  const pageWidth = htmlDoc.internal.pageSize.getWidth() - 20; // margin
+
+  htmlLines.forEach(line => {
+    const wrapped = htmlDoc.splitTextToSize(line, pageWidth);
+    wrapped.forEach(wLine => {
+      if (y1 > 280) {
+        htmlDoc.addPage();
+        y1 = 10;
+      }
+      htmlDoc.text(wLine, 10, y1);
+      y1 += 4.5; // smaller line spacing
+    });
+  });
+  htmlDoc.save('example-portfolio.html.pdf');
+
+  // === CSS PDF ===
+  const cssDoc = new jsPDF();
+  cssDoc.setFontSize(8); // Reduce font size
+  const cssLines = cssCode.split('\n');
+  let y2 = 10;
+
+  cssLines.forEach(line => {
+    const wrapped = cssDoc.splitTextToSize(line, pageWidth);
+    wrapped.forEach(wLine => {
+      if (y2 > 280) {
+        cssDoc.addPage();
+        y2 = 10;
+      }
+      cssDoc.text(wLine, 10, y2);
+      y2 += 4.5;
+    });
+  });
+  cssDoc.save('styles_portfolio.css.pdf');
+}
+    </script>
 
 
 

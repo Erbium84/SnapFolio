@@ -129,3 +129,17 @@ fieldset {
     border-radius: 6px;
     cursor: pointer;
 }
+
+
+#controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+#controls > *{
+    padding: 20px;
+    font-size: larger;
+}

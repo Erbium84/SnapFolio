@@ -503,6 +503,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 email_p.textContent = email_form;
                 phone_p.textContent = phone_form;
                 if (website_p && website_form) website_p.textContent = website_form;
+                
             }
+            
     }
+    
 });
+
