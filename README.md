@@ -21,7 +21,7 @@ Within minutes, users can **fill a form**, **preview a portfolio**, and **export
 
 ## 🆚 How SnapFolio Compares
 
-| Feature                        | **SnapFolio**                              | **Typical Builders** (Wix, Webflow, etc.) |
+| Feature                        | **SnapFolio**                              | **Typical Enterprise Builders**        |
 |-------------------------------|--------------------------------------------|-------------------------------------------|
 | Free to use                   | ✅ 100%                                     | ❌ Limited plans / Freemium                |
 | Account/Login Required        | ❌ No                                       | ✅ Required                                |
